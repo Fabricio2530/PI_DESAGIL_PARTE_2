@@ -18,10 +18,10 @@ public abstract class Usuario {
 	}
 	
 	
-	public void postaVideo(int id, Produto produto) {
+	public Video postaVideo(int id, Produto produto) {
 		Video novoVideo = new Video(id, this, produto);
-		
 		this.videos.add(novoVideo);
+		return novoVideo;
 	}
 	
 	public int totalAvaliacoes() {

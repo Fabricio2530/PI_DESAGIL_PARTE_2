@@ -28,9 +28,9 @@ public class Video {
 		return this.produto;
 	}
 
-	public void adicionaAvalicao(Usuario usuario, int inteiro) {
+	public void adicionaAvalicao(Usuario usuarioAvalia, int inteiro) {
 		
-		if ((this.usuario.getNome() != usuario.getNome()) && ((inteiro >=1 ) && (inteiro <= 5))) {
+		if ((this.usuario.getNome() != usuarioAvalia.getNome()) && ((inteiro >=1 ) && (inteiro <= 5))) {
 			this.avalicaoes.put(usuario.getNome(), inteiro);
 		}
 	}
